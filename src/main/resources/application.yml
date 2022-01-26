@@ -1,0 +1,13 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+app:
+  basic:
+    password: 1234
+    username: lais
+amazon:
+  aws:
+    accesskey: xxx
+    secretKey: xxx
+  dynamoDB:
+    endpoint: dynamodb.us-east-1.amazonaws.com

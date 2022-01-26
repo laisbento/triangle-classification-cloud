@@ -1,0 +1,17 @@
+[
+  {
+    "index": "29692a89-070a-426e-a17c-cc8a2139f78d",
+    "request": "TriangleRequest(sizeOne=2, sizeTwo=2, sizeThree=2)",
+    "result": "EQUILATERAL"
+  },
+  {
+    "index": "84aca5d0-0044-4b35-8dc0-10e349a80865",
+    "request": "TriangleRequest(sizeOne=2, sizeTwo=2, sizeThree=1)",
+    "result": "ISOSCELES"
+  },
+  {
+    "index": "6962366d-22a5-49c4-873f-ab12e20119ee",
+    "request": "TriangleRequest(sizeOne=3, sizeTwo=2, sizeThree=1)",
+    "result": "SCALENE"
+  }
+]
