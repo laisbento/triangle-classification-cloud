@@ -14,11 +14,13 @@ mvn test
 ```
 To do requests on cloud
 ```link
-http://triangleclassifier-env.eba-eay3gaz3.us-east-1.elasticbeanstalk.com
+https://isjzlybo3h.execute-api.us-east-1.amazonaws.com/triangle
 ```
 
 ## Architecture
 The service was built in Java with Spring Boot. The application is stored in EBS on AWS. The EBS allows integration with API gateway, which is the entry point for the available requests. All, even requests, even results are stored in AWS. They are all available to query.
+All application logs are sent to the CloudWatch via API Gateway. The logs have 7 days TTL.
+Also, the current account level throttling rate is 20 requests per second with a burst of 5 requests.
 
 ![alt text](arch.png)
 
@@ -62,7 +64,7 @@ Example of response:
     }
 ]
 ```
-Also, you can get the endpoints mapper on [Swagger](http://triangleclassifier-env.eba-eay3gaz3.us-east-1.elasticbeanstalk.com/swagger-ui.html). Don't forget to send the test credentials.
+Also, you can get the endpoints mapper on [Swagger](https://isjzlybo3h.execute-api.us-east-1.amazonaws.com/triangle/swagger-ui.html). Don't forget to send the test credentials.
 
 ---
 
